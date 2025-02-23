@@ -1,0 +1,78 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #CCCC00;  /* Yellow-green background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Styles */
+.sidenav {
+    width: 200px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav li {
+    margin-bottom: 3px;
+}
+
+.sidenav a {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: purple;
+    border-right: 10px solid black;
+}
+
+.sidenav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Content Styles */
+.content {
+    flex: 1;
+}
+
+h1 {
+    color: purple;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+p {
+    color: purple;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid purple;
+    margin: 20px 0;
+}
+
+.footer {
+    color: purple;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidenav {
+        width: 100%;
+    }
+} 
